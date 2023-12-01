@@ -1,0 +1,110 @@
+.caminho {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+    margin: 7px 0px 0px 20px;
+    font-size: 18px;
+    color: #8a8a8a;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.main h1 {
+    font-size: 64px;
+    color: #123499;
+    padding: 75px 0px;
+}
+
+.main h2 {
+    font-size: 48px;
+}
+
+.main p {
+    font-size: 24px;
+    padding-top: 30px;
+}
+.main a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none !important;
+}
+
+.button-home {
+    width: 30%;
+    height: 50px;
+    background-color: #123499;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 400px;
+}
+
+.contrast .main {
+    color: #fff;
+}
+
+.contrast .main h1 {
+    color: #ffff00;
+}
+
+.contrast .button-home {
+    background-color: #ffff00;
+    color: #000;
+}
+
+@media (max-width: 860px) {
+    .main h1 {
+        font-size: 50px;
+        padding: 25px 0px;
+    }
+
+    .main h2 {
+        font-size: 36px;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    .button-home {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 685px) {
+    
+}
+
+@media (max-width: 550px) {
+    .main h1 {
+        font-size: 36px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .button-home {
+        width: 60%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    
+}

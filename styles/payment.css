@@ -1,0 +1,387 @@
+.pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.caminho {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+    margin: 7px 0px 0px 20px;
+    font-size: 18px;
+    color: #8a8a8a;
+}
+
+.progresso {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.box-1 p {
+    font-size: 18px;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.box-2 p {
+    font-size: 18px;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.box-3 p {
+    font-size: 18px;
+}
+
+.full-box-1 {
+    width: 100%;
+    height: 15px;
+    background-color: #051650;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.full-box-2 {
+    width: 100%;
+    height: 15px;
+    background-color: #051650;
+}
+
+.emp-box {
+    width: 100%;
+    height: 15px;
+    background-color: #8a8a8a;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    width: 60%;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.container-1 h1 {
+    margin-left: 25px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container-2 h1 {
+    margin-left: 20px;
+}
+
+.pedido {
+    display: flex;
+    width: 95%;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #cccccc;
+    margin-top: 25px;
+}
+
+#produto {
+    width: 30%;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.infos-camisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.infos-camisa
+
+.remover {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-size: 15px;
+    color: #E70000;
+}
+
+.remover svg {
+    width: 18px;
+    margin-right: 7px;
+}
+
+.remover a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.remover a:hover {
+    text-decoration: underline;
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pagamento p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 25px 5px 25px;
+}
+
+.input-pagamento {
+    margin: 0 auto;
+    width: 95%;
+    height: 35px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px 0px 15px 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.validade {
+    display: flex;
+    flex-direction: row;
+}
+
+.data {
+    width: 50%;
+}
+
+.cvv {
+    width: 50%;
+}
+
+.select-data {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.select-cvv {
+    display: flex;
+    justify-content: center;
+}
+
+.input-val {
+    width: 47%;
+    height: 67px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.input-cvv {
+    margin: 0 auto;
+    width: 90%;
+    height: 35px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px 0px 15px 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.input-parcelamento {
+    width: 98%;
+    margin-left: 3px;
+    height: 70px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.button-finalizar {
+    width: 100%;
+    height: 70px;
+    bottom: 75px;
+    color: #eaeaeb;
+    background-color: #ff6712;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.contrast .pai {
+    color: #fff;
+}
+
+.contrast .caminho {
+    color: #fff;
+}
+
+.contrast .button-finalizar {
+    background-color: #ffff00;
+    color: #000;
+}
+
+.contrast .remover a{
+    color: #ffff00;
+}
+
+.contrast .remover svg path {
+    fill: #ffff00;
+}
+
+.contrast .full-box-1 {
+    background-color: #ffff00;
+}
+
+.contrast .full-box-2 {
+    background-color: #ffff00;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-1 {
+        width: 80%;
+    }
+
+    .container-2 {
+        width: 80%;
+        padding: 0;
+    }
+
+    .container-1 h1 {
+        font-size: 24px;
+    }
+
+    .container-2 h1 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .pedido {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+
+    .container-1 {
+        width: 80%;
+    }
+
+    .container-2 {
+        width: 80%;
+        padding: 0;
+    }
+
+    .container-1 h1 {
+        font-size: 24px;
+    }
+
+    .container-2 h1 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .pedido {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .progresso {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .box-1 p {
+        font-size: 15px;
+    }
+
+    .box-2 p {
+        font-size: 15px;
+    }
+
+    .box-3 p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 860px) {
+    
+}
+
+@media (max-width: 685px) {
+    
+}
+
+@media (max-width: 550px) {
+    
+}
+
+@media (max-width: 460px) {
+    
+}

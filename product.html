@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FutShirt | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/acessibility.css">
+    <link rel="stylesheet" type="text/css" href="styles/product.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!---------------- HEADER DA PÁGINA ---------------->
+    <header class="header">
+        <div class="logo">
+            <a href="logged-index.html">
+                <img src="assets/icons/logo.svg"
+                    alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input class="input-pesquisa" type="text" placeholder="Procurar...">
+        </div>
+        <div class="icones" class="acessibilidade">
+            <a href="">
+                <img src="assets/icons/cart.svg"
+                    alt="Ícone de um carrinho de compras para acessar a aba carrinho de compras" />
+            </a>
+            <a href="">
+                <img src="assets/icons/profile.svg"
+                    alt="Ícone da silhueta de uma pessoa para acessar a aba de perfil do usuário" />
+            </a>
+        </div>
+    </header>
+
+    <!---------------- ÍCONES DE ACESSIBILIDADE ---------------->
+    <div class=" container-acessibilidade" id="containerAcessibilidade">
+        <img src="assets/icons/acessibility/font_size_icon.svg" alt="Ícone para aumentar/diminuir a fonte do site"
+            onclick="ZoomSize()">
+        <img src="assets/icons/acessibility/luminosity_icon.svg" alt="Ícone para alterar luminosidade do site"
+            onclick="window.toggleContrast()">
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script>
+        new window.VLibras.Widget();
+    </script>
+
+    <!-------------- MENU DE REGIÕES DAS CAMISAS DE TIME -------------->
+    <div class="menu">
+        <nav id="menu-dropdown">
+            <ul>
+                <li><a id="nav" href="camisas-legado.html">Camisas Legado</a></li>
+                <li><a id="nav" href="#">Divisões</a>
+                    <ul>
+                        <li><a id="nav" href="">Serie A</a></li>
+                        <li><a id="nav" href="">Serie B</a></li>
+                        <li><a id="nav" href="">Serie C</a></li>
+                        <li><a id="nav" href="">Serie D</a></li>
+                    </ul>
+                </li>
+                <li><a id="nav" href="#">Regiões</a>
+                    <ul>
+                        <li><a id="nav" href="">Centro-Oeste</a></li>
+                        <li><a id="nav" href="">Nordeste</a></li>
+                        <li><a id="nav" href="">Norte</a></li>
+                        <li><a id="nav" href="">Sudeste</a></li>
+                        <li><a id="nav" href="">Sul</a></li>
+                    </ul>
+                </li>
+        </nav>
+    </div>
+
+    <!---------------- PRODUCT PAGE ---------------->
+    <div class="caminho">
+        <p id="path"></p>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="imagem">
+                <img id="produto" src="" alt="Imagem da camisa de time a ser comprada" />
+                <button class="button-provador">PROVADOR VIRTUAL</button>
+            </div>
+            <div class="info">
+                <h2 id="titulo"></h2>
+                <div class="rating">
+                    <p>4/5 - 196 Avaliações</p>
+                    <img src="assets/icons/stars.svg"
+                        alt="Conjunto de 5 estrelas para apresentar visualmente a nota dos usuários para o produto" />
+                </div>
+                <h1 id="preco"></h1>
+                <p>Em até 3x sem juros</p>
+                <form action="payment.html">
+                    <div class="tamanho">
+                        <p>Tamanho:</p>
+                        <select class="input-tamanho" name="tamanho" required>
+                            <option value="" disabled selected hidden>Selecione um tamanho</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                    </div>
+                    <div class="entrega">
+                        <p>Consulte o prazo de entrega</p>
+                        <div class="cep">
+                            <input class="entrega-input" type="text" placeholder="Digite seu CEP" />
+                            <button id="consultar" class="button-consultar">Consultar</button>
+                        </div>
+                    </div>
+                    <button class="button-finalizar">FINALIZAR</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="caracteristicas">
+            <h2>Características do Prooduto</h2>
+            <table>
+                <tr>
+                    <th>Composição do Tecido</th>
+                    <td>Poliéster</td>
+                </tr>
+                <tr>
+                    <th>Conteúdo da Embalagem</th>
+                    <td>1 Camisa</td>
+                </tr>
+                <tr>
+                    <th>Garantia do Fornecedor</th>
+                    <td>Contra Defeito de Fabricação</td>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td id="table-time"></td>
+                </tr>
+                <tr>
+                    <th>SAC do Fornecedor</th>
+                    <td>PUMA: (11) 2135-9999</td>
+                </tr>
+                <tr>
+                    <th>Gola</th>
+                    <td>Canelada</td>
+                </tr>
+                <tr>
+                    <th>Estampa</th>
+                    <td>Personalizada</td>
+                </tr>
+                <tr>
+                    <th>Tipo de Manga</th>
+                    <td>Manga Curta</td>
+                </tr>
+                <tr>
+                    <th>Escudo</th>
+                    <td>Clube</td>
+                </tr>
+                <tr>
+                    <th>Origem do Time</th>
+                    <td>Nacional</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container-2">
+            <h2>Descontos progressivos na compra de mais camisas!</h2>
+            <div class="camisas-desconto">
+                <div class="camisa" onclick="ComprarDesconto(this)">
+                    <img src="https://s2-ge.glbimg.com/Vf0Zth3Eu8c2cy56iyXF-z1ibfw=/0x0:467x469/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/C/O/608TP5RxS7R8OGhanGaw/whatsapp-image-2023-04-12-at-18.04.15.jpeg"
+                        alt="Imagem da camisa de time à venda" />
+                    <p>Camisa 1 do Flamengo - Versão 22/23</p>
+                    <div class="desconto-preco">
+                        <h4>R$270,00</h4>
+                        <h5>-10%</h5>
+                    </div>
+                    <button class="button-comprar-camisa">COMPRAR</button>
+                </div>
+                <div class="camisa" onclick="ComprarDesconto(this)">
+                    <img src="https://s2-ge.glbimg.com/UFvdaBcIwlwUQ7oUpqIElSWWCbI=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/o/3/UZ5vcgTjOekwYKOjRckw/whatsapp-image-2023-04-12-at-18.25.59-personalizado-.jpeg"
+                        alt="Imagem da camisa de time à venda" />
+                    <p>Camisa 1 do Palmeiras - Versão 22/23</p>
+                    <div class="desconto-preco">
+                        <h4>R$270,00</h4>
+                        <h5>-10%</h5>
+                    </div>
+                    <button class="button-comprar-camisa">COMPRAR</button>
+
+                </div>
+                <div class="camisa" onclick="ComprarDesconto(this)">
+                    <img src="https://s2-ge.glbimg.com/hAcqz0Kpn-EgxmjlRtMO2NBQufo=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/h/K/laurbRSBqrWXyFNcXIJw/whatsapp-image-2023-04-12-at-18.27.35-personalizado-.jpeg"
+                        alt="Imagem da camisa de time à venda" />
+                    <p>Camisa 1 do São Paulo - Versão 22/23</p>
+                    <div class="desconto-preco">
+                        <h4>R$270,00</h4>
+                        <h5>-10%</h5>
+                    </div>
+                    <button class="button-comprar-camisa">COMPRAR</button>
+                </div>
+                <div class="camisa" onclick="ComprarDesconto(this)">
+                    <img src="https://s2-ge.glbimg.com/y1tfqcn4wXtY1ygcEJdEdtey7TI=/0x0:560x560/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/F/m/6CrIAJTgA8VJrfxmScPA/whatsapp-image-2023-04-12-at-18.02.08.jpeg"
+                        alt="Imagem da camisa de time à venda" />
+                    <p>Camisa 1 do Cuiabá - Versão 22/23</p>
+                    <div class="desconto-preco">
+                        <h4>R$207,00</h4>
+                        <h5>-10%</h5>
+                    </div>
+                    <button class="button-comprar-camisa">COMPRAR</button>
+                </div>
+                <div class="camisa" onclick="ComprarDesconto(this)">
+                    <img src="https://s2-ge.glbimg.com/8K4_0S4QPZ_zW_cDznghE4ujJu4=/0x15:800x784/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/p/w/dlAc1PQ7ab7qEQJvfgnw/fticvpxx0amuio0-personalizado-.jpg"
+                        alt="Imagem da camisa de time à venda" />
+                    <p>Camisa 1 do Corinthians - Versão 22/23</p>
+                    <div class="desconto-preco">
+                        <h4>R$225,00</h4>
+                        <h5>-10%</h5>
+                    </div>
+                    <button class="button-comprar-camisa">COMPRAR</button>
+                </div>
+            </div>
+            <img src="assets/icons/ratings.svg" alt="Avaliações dos usuários sobre o produto" />
+        </div>
+    </div>
+
+    <!---------------- FOOTER ---------------->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/icons/logo.svg"
+                alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+        </div>
+        <div class="footer-links">
+            <h1 class="footer-title">LINKS ÚTEIS</h1>
+            <a class="footer-text">Sobre a Futshirt</a>
+            <a class="footer-text">Privacidade</a>
+            <a class="footer-text">Ajuda</a>
+            <a class="footer-text">Trocas e Devoluções</a>
+            <a class="footer-text">Voltar ao Início</a>
+        </div>
+        <div class="footer-contato">
+            <h1 class="footer-title">CONTATO</h1>
+            <a class="footer-text">futshirt@contato.com</a>
+            <a class="footer-text">Fale conosco!</a>
+            <h1 class="footer-title">NOSSAS REDES SOCIAIS</h1>
+            <div class="social-medias">
+                <img src="assets/icons/instagram.svg" class="logo" alt="Link para o Instagram" />
+                <img src="assets/icons/tiktok.svg" class="logo" alt="Link para o TikTok" />
+                <img src="assets/icons/facebook.svg" class="logo" alt="Link para o Facebook" />
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var produto = localStorage.getItem("caminhoImagem");
+        var titulo = localStorage.getItem("tituloProduto");
+        var preco = localStorage.getItem("precoProduto");
+        var time = localStorage.getItem("nomeTime");
+
+        document.getElementById("produto").src = produto;
+        document.getElementById("titulo").innerText = titulo;
+        document.getElementById("preco").innerText = preco;
+        document.getElementById("path").innerText = "Home > " + time + " > " + titulo;
+        document.getElementById("table-time").innerText = time;
+    </script>
+
+</body>
+
+</html>

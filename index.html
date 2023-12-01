@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FutShirt | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/acessibility.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!---------------- HEADER DA PÁGINA ---------------->
+    <header class="header">
+        <div class="logo">
+            <a href="logged-index.html">
+                <img src="assets/icons/logo.svg"
+                    alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input class="input-pesquisa" type="text" placeholder="Procurar...">
+        </div>
+        <div class="icones" class="acessibilidade">
+            <a href="login.html">
+                <p>Entre ou Cadastre-se</p>
+            </a>
+        </div>
+    </header>
+
+    <!---------------- ÍCONES DE ACESSIBILIDADE ---------------->
+    <div class=" container-acessibilidade" id="containerAcessibilidade">
+        <img src="assets/icons/acessibility/font_size_icon.svg" alt="Ícone para aumentar/diminuir a fonte do site"
+            onclick="ZoomSize()">
+        <img src="assets/icons/acessibility/luminosity_icon.svg" alt="Ícone para alterar luminosidade do site"
+            onclick="window.toggleContrast()">
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script>
+        new window.VLibras.Widget();
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script>
+        new window.VLibras.Widget();
+    </script>
+
+    <!-------------- MENU DE REGIÕES DAS CAMISAS DE TIME -------------->
+    <div class="menu">
+        <nav id="menu-dropdown">
+            <ul>
+                <li><a id="nav" href="camisas-legado.html">Camisas Legado</a></li>
+                <li><a id="nav" href="#">Divisões</a>
+                    <ul>
+                        <li><a id="nav" href="">Serie A</a></li>
+                        <li><a id="nav" href="">Serie B</a></li>
+                        <li><a id="nav" href="">Serie C</a></li>
+                        <li><a id="nav" href="">Serie D</a></li>
+                    </ul>
+                </li>
+                <li><a id="nav" href="#">Regiões</a>
+                    <ul>
+                        <li><a id="nav" href="">Centro-Oeste</a></li>
+                        <li><a id="nav" href="">Nordeste</a></li>
+                        <li><a id="nav" href="">Norte</a></li>
+                        <li><a id="nav" href="">Sudeste</a></li>
+                        <li><a id="nav" href="">Sul</a></li>
+                    </ul>
+                </li>
+        </nav>
+    </div>
+
+    <!---------------- CARROSEL DE PROMOÇÕES ---------------->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/banners/banner1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/banners/banner2.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/banners/banner3.jpg" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!---------------- TIMES EM DESTAQUE DA SERIE A ---------------->
+    <div class="times">
+        <div class="container-times">
+            <img src="assets/teams/america-mineiro.png" alt="Escudo do América Mineiro" onclick="FontSize()" />
+            <img src="assets/teams/athletico-paranaense.png" alt="Escudo do Athletico Paranaense" />
+            <img src="assets/teams/atletico-mineiro.png" alt="Escudo do Atlético Mineiro" />
+            <img src="assets/teams/bahia.png" alt="Escudo do Bahia" />
+            <img src="assets/teams/botafogo.png" alt="Escudo do Botafogo" />
+            <img src="assets/teams/bragantino.png" alt="Escudo do Bragantino" />
+            <img src="assets/teams/corinthians.png" alt="Escudo do Corinthians" />
+            <img src="assets/teams/coritiba.png" alt="Escudo do Coritiba" />
+            <img src="assets/teams/cruzeiro.png" alt="Escudo do Cruzeiro" />
+            <img src="assets/teams/cuiaba.png" alt="Escudo do Cuiabá" />
+            <img src="assets/teams/flamengo.png" alt="Escudo do Flamengo" />
+            <img src="assets/teams/fluminense.png" alt="Escudo do Fluminense" />
+            <img src="assets/teams/fortaleza.png" alt="Escudo do Fortaleza" />
+            <img src="assets/teams/goias.png" alt="Escudo do Goiás" />
+            <img src="assets/teams/gremio.png" alt="Escudo do Grêmio" />
+            <img src="assets/teams/internacional.png" alt="Escudo do Internacional" />
+            <img src="assets/teams/palmeiras.png" alt="Escudo do Palmeiras" onclick="PaginaPalmeiras()" />
+            <img src="assets/teams/santos.png" alt="Escudo do Santos" />
+            <img src="assets/teams/sao-paulo.png" alt="Escudo do São Paulo" />
+            <img src="assets/teams/vasco.png" alt="Escudo do Vasco" />
+        </div>
+    </div>
+
+    <div class="vpsi">
+        <div class="retangulo"></div>
+        <h6>VOCÊ PODE SE INTERESSAR</h6>
+        <div class="retangulo"></div>
+    </div>
+
+    <!---------------- CAMISAS DE TIME A VENDA NA HOME 1 ---------------->
+    <div class="container-camisas">
+        <div class="grid-camisas">
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/I6iJAKm2RrLxdJidpxTQxO7oKGw=/0x0:1200x1200/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/J/b/5lO54UQ3Gv0AkLwJzfKg/whatsapp-image-2023-04-13-at-01.01.00.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do Vasco - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$230,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/j7d-lVhLdcD_gByTP20ky1rWki0=/0x229:1063x1463/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/Z/v/fbjyt4R22sQZSBF2ouZQ/whatsapp-image-2023-04-13-at-00.47.10.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 2 do Bahia - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$250,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/UFvdaBcIwlwUQ7oUpqIElSWWCbI=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/o/3/UZ5vcgTjOekwYKOjRckw/whatsapp-image-2023-04-12-at-18.25.59-personalizado-.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do Palmeiras- Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$300,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="grid-camisas">
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/Vf0Zth3Eu8c2cy56iyXF-z1ibfw=/0x0:467x469/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/C/O/608TP5RxS7R8OGhanGaw/whatsapp-image-2023-04-12-at-18.04.15.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do Flamengo - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$300,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/8K4_0S4QPZ_zW_cDznghE4ujJu4=/0x15:800x784/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/p/w/dlAc1PQ7ab7qEQJvfgnw/fticvpxx0amuio0-personalizado-.jpg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do Corinthians - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$250,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/htWNpMwoo8Ea4jWpC_VfLJWB7v4=/0x40:800x728/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/l/G/o5HTQ2TgScSfJp4amLsA/whatsapp-image-2023-04-12-at-16.24.13-personalizado-.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 2 do Red Bull Bragantino - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$200,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="grid-camisas">
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/hAcqz0Kpn-EgxmjlRtMO2NBQufo=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/h/K/laurbRSBqrWXyFNcXIJw/whatsapp-image-2023-04-12-at-18.27.35-personalizado-.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do São Paulo - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$300,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/VKO8YANtlLHpRwALaMvNTEhJdJI=/0x0:545x535/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/R/F/kqXVf4R9uU9Ps9fuvozg/whatsapp-image-2023-04-12-at-17.53.32.jpeg"
+                    alt="Imagem da camisa de time à venda">
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do Cruzeiro - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$250,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="camisa" onclick="Comprar(this)">
+                <img class="imagem-camisa"
+                    src="https://s2-ge.glbimg.com/y1tfqcn4wXtY1ygcEJdEdtey7TI=/0x0:560x560/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/F/m/6CrIAJTgA8VJrfxmScPA/whatsapp-image-2023-04-12-at-18.02.08.jpeg"
+                    alt="Imagem da camisa de time à venda" />
+                <div class="titulo-camisa">
+                    <p>Camisa 1 do Cuiabá - Versão 22/23</p>
+                </div>
+                <div class="preco">
+                    <h6>R$230,00</h6>
+                </div>
+                <a href="#">
+                    <div class="botao-comprar">
+                        <div class="overlap-group">
+                            <div class="botao-comprar-texto">
+                                <h5>COMPRAR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a class="carregar">CARREGAR MAIS</a>
+
+    <!---------------- FOOTER ---------------->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/icons/logo.svg"
+                alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+        </div>
+        <div class="footer-links">
+            <h1 class="footer-title">LINKS ÚTEIS</h1>
+            <a class="footer-text">Sobre a Futshirt</a>
+            <a class="footer-text">Privacidade</a>
+            <a class="footer-text">Ajuda</a>
+            <a class="footer-text">Trocas e Devoluções</a>
+            <a class="footer-text">Voltar ao Início</a>
+        </div>
+        <div class="footer-contato">
+            <h1 class="footer-title">CONTATO</h1>
+            <a class="footer-text">futshirt@contato.com</a>
+            <a class="footer-text">Fale conosco!</a>
+            <h1 class="footer-title">NOSSAS REDES SOCIAIS</h1>
+            <div class="social-medias">
+                <img src="assets/icons/instagram.svg" class="logo" alt="Link para o Instagram" />
+                <img src="assets/icons/tiktok.svg" class="logo" alt="Link para o TikTok" />
+                <img src="assets/icons/facebook.svg" class="logo" alt="Link para o Facebook" />
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

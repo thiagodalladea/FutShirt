@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FutShirt | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/acessibility.css">
+    <link rel="stylesheet" type="text/css" href="styles/payment.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!---------------- HEADER DA PÁGINA ---------------->
+    <header class="header">
+        <div class="logo">
+            <a href="logged-index.html">
+                <img src="assets/icons/logo.svg"
+                    alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input class="input-pesquisa" type="text" placeholder="Procurar...">
+        </div>
+        <div class="icones" class="acessibilidade">
+            <a href="">
+                <img src="assets/icons/cart.svg"
+                    alt="Ícone de um carrinho de compras para acessar a aba carrinho de compras" />
+            </a>
+            <a href="">
+                <img src="assets/icons/profile.svg"
+                    alt="Ícone da silhueta de uma pessoa para acessar a aba de perfil do usuário" />
+            </a>
+        </div>
+    </header>
+
+    <!---------------- ÍCONES DE ACESSIBILIDADE ---------------->
+    <div class=" container-acessibilidade" id="containerAcessibilidade">
+        <img src="assets/icons/acessibility/font_size_icon.svg" alt="Ícone para aumentar/diminuir a fonte do site"
+            onclick="ZoomSize()">
+        <img src="assets/icons/acessibility/luminosity_icon.svg" alt="Ícone para alterar luminosidade do site"
+            onclick="window.toggleContrast()">
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script>
+        new window.VLibras.Widget();
+    </script>
+
+    <!-------------- MENU DE REGIÕES DAS CAMISAS DE TIME -------------->
+    <div class="menu">
+        <nav id="menu-dropdown">
+            <ul>
+                <li><a id="nav" href="camisas-legado.html">Camisas Legado</a></li>
+                <li><a id="nav" href="#">Divisões</a>
+                    <ul>
+                        <li><a id="nav" href="">Serie A</a></li>
+                        <li><a id="nav" href="">Serie B</a></li>
+                        <li><a id="nav" href="">Serie C</a></li>
+                        <li><a id="nav" href="">Serie D</a></li>
+                    </ul>
+                </li>
+                <li><a id="nav" href="#">Regiões</a>
+                    <ul>
+                        <li><a id="nav" href="">Centro-Oeste</a></li>
+                        <li><a id="nav" href="">Nordeste</a></li>
+                        <li><a id="nav" href="">Norte</a></li>
+                        <li><a id="nav" href="">Sudeste</a></li>
+                        <li><a id="nav" href="">Sul</a></li>
+                    </ul>
+                </li>
+        </nav>
+    </div>
+
+    <!---------------- FOOTER ---------------->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/icons/logo.svg"
+                alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+        </div>
+        <div class="footer-links">
+            <h1 class="footer-title">LINKS ÚTEIS</h1>
+            <a class="footer-text">Sobre a Futshirt</a>
+            <a class="footer-text">Privacidade</a>
+            <a class="footer-text">Ajuda</a>
+            <a class="footer-text">Trocas e Devoluções</a>
+            <a class="footer-text">Voltar ao Início</a>
+        </div>
+        <div class="footer-contato">
+            <h1 class="footer-title">CONTATO</h1>
+            <a class="footer-text">futshirt@contato.com</a>
+            <a class="footer-text">Fale conosco!</a>
+            <h1 class="footer-title">NOSSAS REDES SOCIAIS</h1>
+            <div class="social-medias">
+                <img src="assets/icons/instagram.svg" class="logo" alt="Link para o Instagram" />
+                <img src="assets/icons/tiktok.svg" class="logo" alt="Link para o TikTok" />
+                <img src="assets/icons/facebook.svg" class="logo" alt="Link para o Facebook" />
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

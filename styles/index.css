@@ -1,0 +1,276 @@
+.times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    width: 100%;
+}
+
+.container-times {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+
+.container-times img {
+    width: 3.2%;
+    min-width: 35px;
+    height: 100%;
+    padding: 10px 12px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.container-times img:last-child {
+    transition: transform 0.3s;
+}
+
+.container-times img:hover {
+    transform: scale(1.2);
+}
+
+.vpsi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 25px 0;
+}
+
+.vpsi h6 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.retangulo:first-child {
+    background-color: #000;
+    height: 3px;
+    width: 25%;
+    margin-right: 10px;
+}
+
+.retangulo:last-child {
+    background-color: #000;
+    height: 3px;
+    width: 25%;
+    margin-left: 10px;
+}
+
+.container-camisas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grid-camisas {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.grid-camisas:last-child {
+    margin-bottom: 0;
+}
+
+.camisa {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    cursor: pointer;
+}
+
+.camisa:hover {
+    text-decoration: underline;
+    text-decoration-color: #123499;
+}
+
+.camisa a {
+    text-decoration: none;
+}
+
+.imagem-camisa {
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-width: 315px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+
+.titulo-camisa {
+    display: inline-block;
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.preco {
+    width: 100%;
+    min-height: 38px;
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 6px;
+}
+
+.preco h6 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.botao-comprar {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+}
+
+.overlap-group {
+    background-color: #123499;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+}
+
+.botao-comprar-texto {
+    font-size: 28px;
+    color: #FFF;
+}
+
+.carregar {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: #123499;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 75px 0px;
+}
+
+.contrast {
+    background-color: #000;
+}
+
+.contrast header {
+    background-color: #000;
+}
+
+.contrast a {
+    color: #ffff00;
+}
+
+.contrast p {
+    color: #fff;
+}
+
+.contrast h6 {
+    color: #fff;
+}
+
+.contrast .retangulo {
+    background-color: #fff;
+}
+
+.contrast .overlap-group {
+    background-color: #ffff00;
+}
+
+.contrast .botao-comprar-texto {
+    color: #000;
+}
+
+.contrast .camisa:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffff00;
+}
+
+@media (max-width: 1325px) {
+    .grid-camisas {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .vpsi h6 {
+        font-size: 18px;
+    }
+
+    .imagem-camisa {
+        height: 70%;
+    }
+}
+
+@media (max-width: 685px) {
+    .titulo-camisa p {
+        font-size: 14px;
+    }
+
+    .preco h6 {
+        font-size: 22px;
+    }
+
+    .botao-comprar-texto {
+        font-size: 20px;
+    }
+
+    .container-times {
+        width: 90%;
+    }
+
+    .imagem-camisa {
+        height: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .vpsi h6 {
+        font-size: 14px;
+    }
+
+    .titulo-camisa p {
+        font-size: 18px;
+    }
+
+    .preco h6 {
+        font-size: 28px;
+    }
+
+    .botao-comprar-texto {
+        font-size: 22px;
+    }
+
+    .imagem-camisa {
+        height: 30%;
+    }
+
+    .grid-camisas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .camisa {
+        margin-bottom: 35px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 460px) {
+    .vpsi h6 {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FutShirt | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/palmeiras_main.css">
+    <link rel="stylesheet" type="text/css" href="styles/palmeiras_index.css">
+    <link rel="stylesheet" type="text/css" href="styles/acessibility.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!---------------- HEADER DA PÁGINA ---------------->
+    <header class="header">
+        <div class="logo">
+            <a href="logged-index.html">
+                <img src="assets/icons/logo.svg"
+                    alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input class="input-pesquisa" type="text" placeholder="Procurar...">
+        </div>
+        <div class="icones" class="acessibilidade">
+            <a href="">
+                <img src="assets/icons/cart.svg"
+                    alt="Ícone de um carrinho de compras para acessar a aba carrinho de compras" />
+            </a>
+            <a href="">
+                <img src="assets/icons/profile.svg"
+                    alt="Ícone da silhueta de uma pessoa para acessar a aba de perfil do usuário" />
+            </a>
+        </div>
+    </header>
+
+    <!---------------- ÍCONES DE ACESSIBILIDADE ---------------->
+    <div class=" container-acessibilidade" id="containerAcessibilidade">
+        <img src="assets/icons/acessibility/font_size_icon.svg" alt="Ícone para aumentar/diminuir a fonte do site"
+            onclick="ZoomSize()">
+        <img src="assets/icons/acessibility/luminosity_icon.svg" alt="Ícone para alterar luminosidade do site"
+            onclick="window.toggleContrast()">
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script>
+        new window.VLibras.Widget();
+    </script>
+
+    <!-------------- MENU DE REGIÕES DAS CAMISAS DE TIME -------------->
+    <div class="menu">
+        <nav id="menu-dropdown">
+            <ul>
+                <li><a id="nav" href="camisas-legado.html">Camisas Legado</a></li>
+                <li><a id="nav" href="#">Divisões</a>
+                    <ul>
+                        <li><a id="nav" href="">Serie A</a></li>
+                        <li><a id="nav" href="">Serie B</a></li>
+                        <li><a id="nav" href="">Serie C</a></li>
+                        <li><a id="nav" href="">Serie D</a></li>
+                    </ul>
+                </li>
+                <li><a id="nav" href="#">Regiões</a>
+                    <ul>
+                        <li><a id="nav" href="">Centro-Oeste</a></li>
+                        <li><a id="nav" href="">Nordeste</a></li>
+                        <li><a id="nav" href="">Norte</a></li>
+                        <li><a id="nav" href="">Sudeste</a></li>
+                        <li><a id="nav" href="">Sul</a></li>
+                    </ul>
+                </li>
+        </nav>
+    </div>
+
+    <!---------------- PAGINA DO TIME ---------------->
+    <div class="main">
+        <div class="cabecalho">
+            <div class="time">
+                <img src="assets/teams/palmeiras.png" alt="Escudo do Palmeiras, ao lado o nome do time">
+                <h1>PALMEIRAS</h1>
+            </div>
+            <div class="sexo">
+                <svg width="30" height="63" viewBox="0 0 30 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.9787 15.6988C10.6324 15.7369 7.07857 12.2689 7.04103 7.95279C7.0035 3.63671 10.4965 0.106979 14.8428 0.0689171C19.1891 0.0308552 22.743 3.49887 22.7805 7.81495C22.818 12.131 19.3251 15.6608 14.9787 15.6988Z"
+                        fill="#006437" />
+                    <path
+                        d="M30 37.6506V37.2342C29.9574 36.9761 29.8964 36.7245 29.8168 36.4795C27.9868 30.8719 26.1517 25.2658 24.3115 19.6611C23.7537 17.9607 22.4492 17.6334 20.7311 17.5958C16.7635 17.5109 12.7764 17.5833 8.80463 17.5722C7.66389 17.5694 6.78358 17.9672 6.16371 18.7656C5.91392 19.0878 5.65209 19.6662 5.37824 20.5008C3.64908 25.7825 1.91946 31.0627 0.189377 36.3416C-0.308832 37.8609 0.175499 39.344 1.64792 39.9777C2.78172 40.4651 4.09871 40.1211 4.83146 39.1546C5.01187 38.917 5.33152 38.1807 5.7904 36.946C6.08739 36.1475 6.38159 35.3533 6.67303 34.5632C6.67779 34.5474 6.68848 34.534 6.70285 34.5259C6.71721 34.5178 6.73414 34.5156 6.7501 34.5198C6.76606 34.5239 6.7798 34.5341 6.78846 34.5481C6.79711 34.5622 6.80001 34.5791 6.79654 34.5953C6.76323 34.8125 6.8229 35.0395 6.8229 35.2136C6.82568 42.8645 6.82521 50.5154 6.82151 58.1664C6.82151 59.2349 6.89137 59.9939 7.03107 60.4432C7.74438 62.7313 10.5366 63.7618 12.5391 62.3678C13.6095 61.6242 14.1475 60.5574 14.1531 59.1676C14.1734 54.0679 14.1827 48.9752 14.1808 43.8895C14.1808 43.8614 14.1921 43.8345 14.2121 43.8146C14.2322 43.7948 14.2594 43.7836 14.2877 43.7836L15.7254 43.7962C15.7809 43.7962 15.8087 43.824 15.8087 43.8797C15.8124 48.8346 15.8124 53.7866 15.8087 58.7359C15.8087 59.4712 15.8711 60.0348 15.996 60.4265C17.0729 63.7883 21.8038 63.8495 22.9349 60.5031C23.0635 60.1206 23.1282 59.5478 23.1292 58.7847C23.131 51.2099 23.1315 43.6346 23.1306 36.0589C23.1292 35.6174 23.1777 35.0451 23.1736 34.5284C23.1739 34.5157 23.1787 34.5034 23.187 34.4937C23.1953 34.484 23.2066 34.4775 23.2191 34.4752C23.2317 34.4729 23.2446 34.475 23.2557 34.4812C23.2669 34.4873 23.2756 34.4971 23.2804 34.5089C23.5793 35.3454 23.8878 36.1861 24.2061 37.0309C24.7709 38.5349 24.9832 39.461 26.2544 39.9985C28.0585 40.7617 29.6878 39.5042 30 37.6506Z"
+                        fill="#006437" />
+                </svg>
+                <div class="retangulo-vertical"></div>
+                <svg width="30" height="63" viewBox="0 0 31 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.4157 15.7488C19.7146 15.7488 23.1996 12.2233 23.1996 7.87439C23.1996 3.52548 19.7146 0 15.4157 0C11.1168 0 7.63184 3.52548 7.63184 7.87439C7.63184 12.2233 11.1168 15.7488 15.4157 15.7488Z"
+                        fill="#006437" />
+                    <path
+                        d="M31 37.0947V37.3711C30.8051 39.3095 28.5266 40.9715 26.8919 39.3497C26.3662 38.829 25.9626 37.8446 25.5921 37.1017C25.5869 37.0904 25.5778 37.0814 25.5665 37.0763C25.5552 37.0713 25.5425 37.0706 25.5308 37.0743C25.519 37.078 25.509 37.086 25.5026 37.0966C25.4962 37.1073 25.4938 37.12 25.496 37.1322C25.8812 39.5474 26.2683 41.9579 26.6572 44.3637C26.8091 45.3079 26.8466 45.943 26.7697 46.2688C26.5021 47.4005 25.5344 47.6407 24.4446 47.6393C23.5112 47.6384 22.5788 47.6384 21.6473 47.6393C21.6261 47.6393 21.6051 47.6435 21.5855 47.6518C21.5659 47.66 21.5482 47.6721 21.5332 47.6874C21.5183 47.7026 21.5065 47.7207 21.4985 47.7405C21.4905 47.7604 21.4865 47.7817 21.4867 47.8031C21.5105 51.94 21.5022 56.0737 21.462 60.2042C21.4304 63.4256 16.927 64.056 16.0499 61.0789C15.9556 60.7596 15.9081 60.1903 15.9072 59.371C15.8998 55.4905 15.8989 51.6156 15.9044 47.7462C15.9044 47.7178 15.8933 47.6907 15.8735 47.6706C15.8536 47.6506 15.8267 47.6393 15.7987 47.6393H15.0369C14.9729 47.6393 14.9409 47.6717 14.9409 47.7365C14.9418 51.7216 14.9413 55.7039 14.9395 59.6835C14.9395 60.2898 14.8448 60.8535 14.6554 61.3747C13.9746 63.2506 11.2637 63.5311 10.0188 62.0245C9.57866 61.4932 9.35768 60.8609 9.35585 60.1278C9.34486 55.9992 9.34303 51.8794 9.35035 47.7684C9.35035 47.7338 9.33691 47.7006 9.31297 47.6761C9.28903 47.6517 9.25656 47.6379 9.2227 47.6379C8.17817 47.6407 6.19755 47.8531 5.29165 47.4338C4.16614 46.9131 4.23476 45.8828 4.43516 44.7261C4.86432 42.249 5.30171 39.7802 5.74734 37.3197C5.75075 37.3039 5.74813 37.2874 5.74 37.2735C5.73188 37.2596 5.71885 37.2494 5.70355 37.2448C5.68824 37.2402 5.6718 37.2417 5.65751 37.2489C5.64323 37.2561 5.63217 37.2685 5.62656 37.2836C5.36577 37.8959 5.05145 38.618 4.62595 39.0762C2.97611 40.848 -0.134147 39.5705 0.00448334 37.0684C0.0236994 36.7194 0.18063 36.1978 0.475276 35.5035C2.54787 30.614 4.62458 25.7268 6.7054 20.8419C7.47953 19.0216 8.05876 17.7302 10.2096 17.7455C13.8757 17.7719 17.5446 17.7566 21.2094 17.7497C22.173 17.7483 22.9087 17.7386 23.444 18.4509C23.7176 18.8147 23.9962 19.3497 24.2799 20.056C26.3451 25.188 28.4159 30.3182 30.4921 35.4466C30.7703 36.1334 30.9396 36.6828 31 37.0947Z"
+                        fill="#006437" />
+                </svg>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="titulo-setor">
+                <h2>LINHA ATUAL DE CAMISAS</h2>
+                <div class="retangulo-horizontal"></div>
+            </div>
+            <div class="setor">
+                <div class="container-camisas">
+                    <div class="grid-camisas">
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://s2-ge.glbimg.com/UFvdaBcIwlwUQ7oUpqIElSWWCbI=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/o/3/UZ5vcgTjOekwYKOjRckw/whatsapp-image-2023-04-12-at-18.25.59-personalizado-.jpeg"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa 1 do Palmeiras - Versão 22/23</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$300,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://static.netshoes.com.br/produtos/camisa-palmeiras-ii-2324-s-n-torcedor-puma-masculina/14/2I3-7590-014/2I3-7590-014_zoom1.jpg?ts=1695700000&ims=544x"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa 2 do Palmeiras - Versão 22/23</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$300,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://static.netshoes.com.br/produtos/camisa-palmeiras-iii-2324-sn-torcedor-puma-masculina/14/2I3-9496-014/2I3-9496-014_zoom1.jpg?ts=1695699309&"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa 3 do Palmeiras- Versão 22/23</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$280,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="titulo-setor">
+                <h2>CAMISAS LEGADO</h2>
+                <div class="retangulo-horizontal"></div>
+            </div>
+            <div class="setor">
+                <div class="container-camisas">
+                    <div class="grid-camisas">
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://photos.enjoei.com.br/camisa-palmeiras-1992/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy80NTU2NzkxL2U3Y2IyYjk0MTRhZTc0YmU0MWQ0MTMyZjMzYmY5ZTY5LmpwZw"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa Palmeiras - 1992</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$450,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://photos.enjoei.com.br/camisa-palmeiras-1998-79368154/800x800/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy80NzU3NDgwLzE0YzNkOWRiZjRkZDAzNGJhOGI5NmRiZGRiYzMyNWFjLmpwZw"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa Palmeiras - 1998</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$380,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://http2.mlstatic.com/D_NQ_NP_658394-MLB49435363919_032022-O.webp"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa Autografada Palmeiras - 1999</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$850,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="titulo-setor">
+                <h2>TODAS AS CAMISAS</h2>
+                <div class="retangulo-horizontal"></div>
+            </div>
+            <div class="setor">
+                <div class="container-camisas">
+                    <div class="grid-camisas">
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://s2-ge.glbimg.com/UFvdaBcIwlwUQ7oUpqIElSWWCbI=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/o/3/UZ5vcgTjOekwYKOjRckw/whatsapp-image-2023-04-12-at-18.25.59-personalizado-.jpeg"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa 1 do Palmeiras - Versão 22/23</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$300,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://photos.enjoei.com.br/camisa-palmeiras-1998-79368154/800x800/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy80NzU3NDgwLzE0YzNkOWRiZjRkZDAzNGJhOGI5NmRiZGRiYzMyNWFjLmpwZw"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa Palmeiras - 1998</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$380,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://static.netshoes.com.br/produtos/camisa-palmeiras-iii-2324-sn-torcedor-puma-masculina/14/2I3-9496-014/2I3-9496-014_zoom1.jpg?ts=1695699309&"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa 3 do Palmeiras - Versão 22/23</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$280,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-camisas">
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://photos.enjoei.com.br/camisa-palmeiras-1992/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy80NTU2NzkxL2U3Y2IyYjk0MTRhZTc0YmU0MWQ0MTMyZjMzYmY5ZTY5LmpwZw"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa Palmeiras - 1992</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$450,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://static.netshoes.com.br/produtos/camisa-palmeiras-ii-2324-s-n-torcedor-puma-masculina/14/2I3-7590-014/2I3-7590-014_zoom1.jpg?ts=1695700000&ims=544x"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa 2 do Palmeiras - Versão 22/23</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$300,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="camisa" onclick="Comprar(this)">
+                            <img class="imagem-camisa"
+                                src="https://http2.mlstatic.com/D_NQ_NP_658394-MLB49435363919_032022-O.webp"
+                                alt="Imagem da camisa de time à venda">
+                            <div class="titulo-camisa">
+                                <p>Camisa Autografada Palmeiras - 1999</p>
+                            </div>
+                            <div class="preco">
+                                <h6>R$850,00</h6>
+                            </div>
+                            <a href="#">
+                                <div class="botao-comprar">
+                                    <div class="overlap-group">
+                                        <div class="botao-comprar-texto">
+                                            <h5>COMPRAR</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- FOOTER ---------------->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/icons/logo.svg"
+                alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+        </div>
+        <div class="footer-links">
+            <h1 class="footer-title">LINKS ÚTEIS</h1>
+            <a class="footer-text">Sobre a Futshirt</a>
+            <a class="footer-text">Privacidade</a>
+            <a class="footer-text">Ajuda</a>
+            <a class="footer-text">Trocas e Devoluções</a>
+            <a class="footer-text">Voltar ao Início</a>
+        </div>
+        <div class="footer-contato">
+            <h1 class="footer-title">CONTATO</h1>
+            <a class="footer-text">futshirt@contato.com</a>
+            <a class="footer-text">Fale conosco!</a>
+            <h1 class="footer-title">NOSSAS REDES SOCIAIS</h1>
+            <div class="social-medias">
+                <img src="assets/icons/instagram.svg" class="logo" alt="Link para o Instagram" />
+                <img src="assets/icons/tiktok.svg" class="logo" alt="Link para o TikTok" />
+                <img src="assets/icons/facebook.svg" class="logo" alt="Link para o Facebook" />
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

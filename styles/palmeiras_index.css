@@ -1,0 +1,374 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.cabecalho {
+    display: flex;
+    width: 58%;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.retangulo-vertical {
+    background-color: #006437;
+    height: 50px;
+    width: 2px;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time img {
+    width: 130px;
+}
+
+.time h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #006437;
+    margin-left: 15px;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sexo svg {
+    padding: 20px;
+}
+
+.titulo-setor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titulo-setor {
+    font-size: 16px;
+}
+
+.setor {
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    padding-top: 35px;
+}
+
+.main h2 {
+    color: #006437;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.retangulo-horizontal {
+    background-color: #006437;
+    height: 3px;
+    width: 100%;
+}
+
+.container-camisas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grid-camisas {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.grid-camisas:last-child {
+    margin-bottom: 0;
+}
+
+.camisa {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    cursor: pointer;
+}
+
+.camisa:hover {
+    text-decoration: underline;
+    text-decoration-color: #006437;
+}
+
+.camisa a {
+    text-decoration: none;
+}
+
+.imagem-camisa {
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-width: 315px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+
+.titulo-camisa {
+    display: inline-block;
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.preco {
+    width: 100%;
+    min-height: 38px;
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 6px;
+}
+
+.preco h6 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.botao-comprar {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+}
+
+.overlap-group {
+    background-color: #006437;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+}
+
+.botao-comprar-texto {
+    font-size: 28px;
+    color: #FFF;
+}
+
+.carregar {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: #006437;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 75px 0px;
+}
+
+.contrast {
+    background-color: #000;
+}
+
+.contrast header {
+    background-color: #000;
+}
+
+.contrast .main h1 {
+    color: #fff;
+}
+
+.contrast .main h2 {
+    color: #fff;
+}
+
+.contrast .main h6 {
+    color: #fff;
+}
+
+.contrast .main p {
+    color: #fff;
+}
+
+.contrast .main a {
+    color: #ffff00;
+}
+
+.contrast .retangulo-horizontal {
+    background-color: #fff;
+}
+
+.contrast .retangulo-vertical {
+    background-color: #fff;
+}
+
+.contrast svg path {
+    fill: #ffff00;
+}
+
+.contrast .retangulo {
+    background-color: #fff;
+}
+
+.contrast .overlap-group {
+    background-color: #ffff00;
+}
+
+.contrast .botao-comprar-texto {
+    color: #000;
+}
+
+.contrast .camisa:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffff00;
+}
+
+@media (max-width: 1325px) {
+    .grid-camisas {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        width: 80%;
+    }
+
+    .linha {
+        width: 80%;
+    }
+
+    .imagem-camisa {
+        height: 70%;
+    }
+
+    .botao-comprar-texto {
+        font-size: 16px;
+    }
+
+    .time img {
+        width: 80px;
+    }
+
+    .time h1 {
+        font-size: 36px;
+    }
+
+    .sexo svg {
+        width: 20px;
+    }
+}
+
+@media (max-width: 685px) {
+    .titulo-camisa p {
+        font-size: 14px;
+    }
+
+    .preco h6 {
+        font-size: 22px;
+    }
+
+    .botao-comprar-texto {
+        font-size: 16px;
+    }
+
+    .container-times {
+        width: 90%;
+    }
+
+    .imagem-camisa {
+        height: 50%;
+    }
+
+    .titulo-setor {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .titulo-camisa p {
+        font-size: 18px;
+    }
+
+    .preco h6 {
+        font-size: 28px;
+    }
+
+    .botao-comprar-texto {
+        font-size: 22px;
+    }
+
+    .imagem-camisa {
+        height: 30%;
+    }
+
+    .grid-camisas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .camisa {
+        margin-bottom: 35px;
+        width: 60%;
+    }
+
+    .time img {
+        width: 60px;
+    }
+
+    .time h1 {
+        font-size: 30px;
+    }
+
+    .sexo svg {
+        width: 15px;
+    }
+
+    .retangulo-vertical {
+        height: 30px;
+    }
+
+    .retangulo-horizontal {
+        width: 0px;
+    }
+
+    .titulo-setor h2 {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 460px) {
+    .time img {
+        width: 50px;
+    }
+
+    .time h1 {
+        font-size: 26px;
+    }
+
+    .sexo svg {
+        width: 13px;
+        padding: 10px;
+    }
+}

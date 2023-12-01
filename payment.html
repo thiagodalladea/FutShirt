@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FutShirt | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/acessibility.css">
+    <link rel="stylesheet" type="text/css" href="styles/payment.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!---------------- HEADER DA PÁGINA ---------------->
+    <header class="header">
+        <div class="logo">
+            <a href="logged-index.html">
+                <img src="assets/icons/logo.svg"
+                    alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input class="input-pesquisa" type="text" placeholder="Procurar...">
+        </div>
+        <div class="icones" class="acessibilidade">
+            <a href="">
+                <img src="assets/icons/cart.svg"
+                    alt="Ícone de um carrinho de compras para acessar a aba carrinho de compras" />
+            </a>
+            <a href="">
+                <img src="assets/icons/profile.svg"
+                    alt="Ícone da silhueta de uma pessoa para acessar a aba de perfil do usuário" />
+            </a>
+        </div>
+    </header>
+
+    <!---------------- ÍCONES DE ACESSIBILIDADE ---------------->
+    <div class=" container-acessibilidade" id="containerAcessibilidade">
+        <img src="assets/icons/acessibility/font_size_icon.svg" alt="Ícone para aumentar/diminuir a fonte do site"
+            onclick="ZoomSize()">
+        <img src="assets/icons/acessibility/luminosity_icon.svg" alt="Ícone para alterar luminosidade do site"
+            onclick="window.toggleContrast()">
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script>
+        new window.VLibras.Widget();
+    </script>
+
+    <!-------------- MENU DE REGIÕES DAS CAMISAS DE TIME -------------->
+    <div class="menu">
+        <nav id="menu-dropdown">
+            <ul>
+                <li><a id="nav" href="camisas-legado.html">Camisas Legado</a></li>
+                <li><a id="nav" href="#">Divisões</a>
+                    <ul>
+                        <li><a id="nav" href="">Serie A</a></li>
+                        <li><a id="nav" href="">Serie B</a></li>
+                        <li><a id="nav" href="">Serie C</a></li>
+                        <li><a id="nav" href="">Serie D</a></li>
+                    </ul>
+                </li>
+                <li><a id="nav" href="#">Regiões</a>
+                    <ul>
+                        <li><a id="nav" href="">Centro-Oeste</a></li>
+                        <li><a id="nav" href="">Nordeste</a></li>
+                        <li><a id="nav" href="">Norte</a></li>
+                        <li><a id="nav" href="">Sudeste</a></li>
+                        <li><a id="nav" href="">Sul</a></li>
+                    </ul>
+                </li>
+        </nav>
+    </div>
+
+    <!---------------- PAYMENT ---------------->
+    <div class="pai">
+        <div class="caminho">
+            <p id="path"></p>
+        </div>
+        <div class="progresso">
+            <div class="box-1">
+                <p>Cadastro</p>
+                <div class="full-box-1"></div>
+            </div>
+            <div class="box-2">
+                <p>Carrinho</p>
+                <div class="full-box-2"></div>
+            </div>
+            <div class="box-3">
+                <p>Pagamento</p>
+                <div class="emp-box"></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="container-1">
+                    <h1>Resumo do pedido</h1>
+                    <div class="pedido">
+                        <img id="produto" src="" alt="Imagem da camisa de time à venda" />
+                        <div class="infos-camisa">
+                            <p id="titulo"></p>
+                            <p id="tamanho"></p>
+                            <h2 id="preco"></h2>
+                            <div class="remover">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 512.00 512.00">
+                                    <path fill="#e70000" d="
+  M 150.19 0.00
+  L 299.88 0.00
+  L 300.00 59.29
+  A 0.71 0.71 0.0 0 0 300.71 60.00
+  L 449.75 60.00
+  A 0.25 0.25 0.0 0 1 450.00 60.25
+  L 450.00 89.50
+  A 0.50 0.50 0.0 0 1 449.50 90.00
+  L 420.50 90.00
+  Q 420.00 90.00 420.00 90.50
+  L 420.00 119.50
+  Q 420.00 120.00 419.50 120.00
+  L 30.25 120.00
+  A 0.25 0.25 0.0 0 1 30.00 119.75
+  L 30.00 90.99
+  A 0.98 0.98 0.0 0 0 29.03 90.01
+  L 0.00 89.68
+  L 0.00 60.03
+  L 149.32 60.00
+  A 0.69 0.68 -89.6 0 0 150.00 59.32
+  L 150.19 0.00
+  Z
+  M 270.00 30.70
+  A 0.70 0.70 0.0 0 0 269.30 30.00
+  L 180.70 30.00
+  A 0.70 0.70 0.0 0 0 180.00 30.70
+  L 180.00 59.30
+  A 0.70 0.70 0.0 0 0 180.70 60.00
+  L 269.30 60.00
+  A 0.70 0.70 0.0 0 0 270.00 59.30
+  L 270.00 30.70
+  Z" />
+                                    <path fill="#e70000" d="
+  M 389.98 512.00
+  L 60.01 512.00
+  L 60.00 150.79
+  A 0.79 0.79 0.0 0 1 60.79 150.00
+  L 389.45 150.00
+  Q 389.95 150.00 389.95 150.50
+  L 389.98 512.00
+  Z
+  M 165.00 255.72
+  A 0.72 0.72 0.0 0 0 164.28 255.00
+  L 135.72 255.00
+  A 0.72 0.72 0.0 0 0 135.00 255.72
+  L 135.00 406.28
+  A 0.72 0.72 0.0 0 0 135.72 407.00
+  L 164.28 407.00
+  A 0.72 0.72 0.0 0 0 165.00 406.28
+  L 165.00 255.72
+  Z
+  M 240.00 255.60
+  A 0.60 0.60 0.0 0 0 239.40 255.00
+  L 210.60 255.00
+  A 0.60 0.60 0.0 0 0 210.00 255.60
+  L 210.00 406.40
+  A 0.60 0.60 0.0 0 0 210.60 407.00
+  L 239.40 407.00
+  A 0.60 0.60 0.0 0 0 240.00 406.40
+  L 240.00 255.60
+  Z
+  M 315.00 255.63
+  A 0.63 0.63 0.0 0 0 314.37 255.00
+  L 285.63 255.00
+  A 0.63 0.63 0.0 0 0 285.00 255.63
+  L 285.00 406.37
+  A 0.63 0.63 0.0 0 0 285.63 407.00
+  L 314.37 407.00
+  A 0.63 0.63 0.0 0 0 315.00 406.37
+  L 315.00 255.63
+  Z" />
+                                </svg>
+                                <a href="">Remover item</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-2">
+                    <h1>Pagamento</h1>
+                    <form action="finish.html">
+                        <div class="pagamento">
+                            <p>Número *</p>
+                            <input class="input-pagamento" type="number" name="num_cartao"
+                                placeholder="Digite o número impresso no cartão" required>
+                            <p>Nome *</p>
+                            <input class="input-pagamento" type="text" name="nome_cartao"
+                                placeholder="Digite o nome impresso no cartão" required>
+                            <div class="validade">
+                                <div class="data">
+                                    <p>Validade *</p>
+                                    <div class="select-data">
+                                        <select class="input-val" name="mes">
+                                            <option value="" disabled selected hidden>Mês</option>
+                                            <option value="01">Janeiro</option>
+                                            <option value="02">Fevereiro</option>
+                                            <option value="03">Março</option>
+                                            <option value="04">Abril</option>
+                                            <option value="05">Maio</option>
+                                            <option value="06">Junho</option>
+                                            <option value="07">Julho</option>
+                                            <option value="08">Agosto</option>
+                                            <option value="09">Setembro</option>
+                                            <option value="10">Outubro</option>
+                                            <option value="11">Novembro</option>
+                                            <option value="12">Dezembro</option>
+                                        </select>
+                                        <select class="input-val" name="ano">
+                                            <option value="" disabled selected hidden>Ano</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                            <option value="2030">2030</option>
+                                            <option value="2031">2031</option>
+                                            <option value="2032">2032</option>
+                                            <option value="2033">2033</option>
+                                            <option value="2034">2034</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cvv">
+                                    <p>CVV *</p>
+                                    <div class="select-cvv">
+                                        <input class="input-cvv" type="number" name="cvv"
+                                            placeholder="Número de 3 dígitos" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Parcelamento *</p>
+                            <select class="input-parcelamento" name="parcelamento">
+                                <option value="" disabled selected hidden>Selecione o parcelamento</option>
+                                <option value="1">1 parcela</option>
+                                <option value="2">2 parcelas</option>
+                                <option value="3">3 parcelas</option>
+                                <option value="4">4 parcelas</option>
+                                <option value="5">5 parcelas</option>
+                                <option value="6">6 parcelas</option>
+                            </select>
+                            <button class="button-finalizar">FINALIZAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- FOOTER ---------------->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/icons/logo.svg"
+                alt="Logo da loja. Consiste em um goleiro defendendo um chute e ao lado o nome da loja (FutShirt)" />
+        </div>
+        <div class="footer-links">
+            <h1 class="footer-title">LINKS ÚTEIS</h1>
+            <a class="footer-text">Sobre a Futshirt</a>
+            <a class="footer-text">Privacidade</a>
+            <a class="footer-text">Ajuda</a>
+            <a class="footer-text">Trocas e Devoluções</a>
+            <a class="footer-text">Voltar ao Início</a>
+        </div>
+        <div class="footer-contato">
+            <h1 class="footer-title">CONTATO</h1>
+            <a class="footer-text">futshirt@contato.com</a>
+            <a class="footer-text">Fale conosco!</a>
+            <h1 class="footer-title">NOSSAS REDES SOCIAIS</h1>
+            <div class="social-medias">
+                <img src="assets/icons/instagram.svg" class="logo" alt="Link para o Instagram" />
+                <img src="assets/icons/tiktok.svg" class="logo" alt="Link para o TikTok" />
+                <img src="assets/icons/facebook.svg" class="logo" alt="Link para o Facebook" />
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var produto = localStorage.getItem("caminhoImagem");
+        var titulo = localStorage.getItem("tituloProduto");
+        var preco = localStorage.getItem("precoProduto");
+        var time = localStorage.getItem("nomeTime");
+
+        document.getElementById("produto").src = produto;
+        document.getElementById("titulo").innerText = titulo;
+        document.getElementById("preco").innerText = preco;
+        document.getElementById("path").innerText = "Home > " + time + " > " + titulo + " > Pagamento";
+
+        window.onload = function () {
+            var tamanhoProduto = ObterParametroDaURL("tamanho");
+            localStorage.setItem("tamanhoProduto", tamanhoProduto)
+            document.getElementById("tamanho").innerHTML = `Tamanho: ${tamanhoProduto}`;
+        };
+    </script>
+
+</body>
+
+</html>

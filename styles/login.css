@@ -1,0 +1,143 @@
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.main h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.login form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login a {
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #757575;
+}
+
+.register {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-login {
+    width: 90%;
+    height: 40px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 95%;
+    height: 80px;
+    color: #eaeaeb;
+    background-color: #ff6712;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.retangulo-vertical {
+    width: 3px;
+    height: 450px;
+    background-color: #D9D9D9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contrast .main {
+    color: #fff;
+}
+
+.contrast .login a{
+    color: #ffff00;
+}
+
+.contrast .button {
+    background-color: #ffff00;
+    color: #000;
+}
+
+@media (max-width: 1000px) {
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 78%;
+    }
+}
+
+@media (max-width: 685px) {
+    .retangulo-vertical {
+        width: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .login {
+        margin: 50px 0px 50px 0px;
+        padding: 0;
+    }
+
+    .register {
+        margin: 50px 0px 100px 0px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    
+}
+
+@media (max-width: 460px) {
+    
+}

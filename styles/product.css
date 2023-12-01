@@ -1,0 +1,368 @@
+.caminho {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+    margin: 7px 0px 0px 20px;
+    font-size: 18px;
+    color: #8a8a8a;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    min-width: 500px;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+#produto {
+    border-radius: 20px;
+}
+
+.info {
+    position: relative;
+}
+
+.info h1 {
+    font-size: 50px;
+}
+
+.info h2 {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.rating p {
+    color: #6A6A6A;
+    font-weight: bold;
+}
+
+.rating img {
+    width: 150px;
+    height: auto;
+}
+
+.tamanho p {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-tamanho {
+    width: 50%;
+    height: 70px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+
+.entrega p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.entrega input {
+    width: 50%;
+    height: 35px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+
+.cep {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.button-consultar {
+    width: 50%;
+    height: 65px;
+    color: #eaeaeb;
+    background-color: #123499;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.button-finalizar {
+    width: 100%;
+    height: 80px;
+    color: #eaeaeb;
+    background-color: #ff6712;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-provador {
+    width: 100%;
+    height: 60px;
+    color: #eaeaeb;
+    background-color: #123499;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th, td:last-child {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 25px;
+}
+
+.container-2 img {
+    margin-bottom: 15px;
+}
+
+.camisas-desconto {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 15px 0px;
+}
+
+.camisa {
+    display: inline-block;
+    width: 25%;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.camisa img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.camisa p {
+    white-space: pre-line;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.camisa h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.camisa h5 {
+    font-size: 16px;
+    color: #fff;
+    background-color: #b90000;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.desconto-preco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-comprar-camisa {
+    width: 100%;
+    height: 45px;
+    color: #eaeaeb;
+    background-color: #123499;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contrast .caminho {
+    color: #fff;
+}
+
+.contrast .main {
+    color: #fff;
+}
+
+.contrast .rating p {
+    color: #fff;
+}
+
+.contrast .button-consultar {
+    background-color: #ffff00;
+    color: #000;
+}
+
+.contrast .button-provador {
+    background-color: #ffff00;
+    color: #000;
+}
+
+.contrast .button-finalizar {
+    background-color: #ffff00;
+    color: #000;
+}
+
+.contrast .container-2 h5 {
+    background-color: #00c8ff;
+    color: #000;
+}
+
+.contrast .button-comprar-camisa {
+    background-color: #ffff00;
+    color: #000;
+}
+
+.contrast th {
+    background-color: #292929;
+}
+
+@media (max-width: 1690px) {
+    .info h1 {
+        font-size: 38px;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 87%;
+    }
+
+    .imagem {
+        min-width: 370px;
+    };
+}
+
+@media (max-width: 860px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-2 {
+        width: 80%;
+    }
+
+    .caracteristicas {
+        width: 80%;
+    }
+}
+
+@media (max-width: 685px) {
+    .desconto-preco {
+        flex-direction: column;
+    }
+
+    .desconto-preco h4 {
+        font-size: 18px;
+    }
+
+    .desconto-preco h5 {
+        font-size: 10px;
+    }
+
+    .container-2 h2 {
+        font-size: 18px;
+    }
+
+    .caminho p {
+        font-size: 10px;
+    }
+
+    .camisa p {
+        font-size: 10px;
+    }
+
+    .button-comprar-camisa {
+        height: 25px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    
+}
+
+@media (max-width: 460px) {
+    
+}
